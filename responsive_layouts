@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Beauty of Oceans</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e0f7fa;
+      color: #004d40;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #00796b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav ul li:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      width: 100%;
+      height: 300px;
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .sidebar {
+      flex: 1;
+      background-color: #b2dfdb;
+      padding: 1rem;
+      border-radius: 8px;
+      min-width: 250px;
+    }
+
+    .main-content {
+      flex: 2;
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      min-width: 280px;
+    }
+
+    .main-content h2 {
+      color: #00695c;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
+
+      .container {
+        flex-direction: column;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>The Beauty of Oceans</h1>
+    <ul>
+      <li>Home</li>
+      <li>Explore</li>
+      <li>Facts</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <div class="hero"></div>
+
+  <div class="container">
+    <div class="sidebar">
+      <h3>Ocean Facts</h3>
+      <ul>
+        <li>Oceans cover 71% of Earth's surface.</li>
+        <li>Home to millions of species.</li>
+        <li>Generates 50% of the oxygen we breathe.</li>
+        <li>Absorbs carbon dioxide, helping reduce climate change effects.</li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <h2>Why Oceans Matter</h2>
+      <p>
+        Oceans are more than just large bodies of water. They are vital for sustaining life on Earth. They regulate temperature, influence weather patterns, and provide food for billions of people.
+      </p>
+      <p>
+        The depths of the ocean remain largely unexplored, holding secrets that scientists are only beginning to uncover. From coral reefs to deep-sea trenches, each ecosystem plays a critical role.
+      </p>
+      <p>
+        Unfortunately, human activities such as overfishing, plastic pollution, and climate change threaten marine life. It's crucial that we take action to protect and preserve our oceans.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 The Beauty of Oceans | Protect Our Blue Planet
+  </footer>
+
+</body>
+</html>
